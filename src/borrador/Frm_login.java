@@ -224,11 +224,8 @@ public class Frm_login extends javax.swing.JFrame {
         String usuario = txtUsuario.getText();
         if (evt.getKeyCode() == KeyEvent.VK_ENTER) {
 
-            JOptionPane.showMessageDialog(this, "Bienvenido " + usuario);
-            nombre = usuario;
-            Frm_menu ventana = new Frm_menu();
-            ventana.setVisible(true);
-            this.dispose();
+            validarusuario();
+            
         }
     }//GEN-LAST:event_txtPassKeyPressed
 
