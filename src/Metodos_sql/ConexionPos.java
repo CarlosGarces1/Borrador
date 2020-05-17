@@ -4,19 +4,20 @@
  * and open the template in the editor.
  */
 package Metodos_sql;
-import com.sun.rowset.CachedRowSetImpl;
+
 import java.sql.Connection;
 import java.sql.DriverManager;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
 import java.sql.Statement;
+import java.sql.ResultSet;
 import javax.sql.rowset.CachedRowSet;
+import com.sun.rowset.CachedRowSetImpl;
 /**
  *
  * @author Estructura de Datos D1
  */
 public class ConexionPos {
-    public CachedRowSet Function(String sql)
+    
+     public CachedRowSet Function(String sql)
     {
             try
             {
@@ -69,4 +70,6 @@ public class ConexionPos {
                    System.out.println(e.getMessage());
             }
     }
+    
+    
 }
